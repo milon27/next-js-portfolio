@@ -127,10 +127,10 @@ So final package.json file will look like this.we added some custom scipt.
 
 ```
 //build our Next.js project to generate .next folder
-1. yarn build
+1. npm run build
 
-//Now deploy with production environment
-2. cross-env NODE_ENV=production firebase deploy — only functions,hosting
+//Now deploy 
+2. npm run deploy
 
 ```
 
