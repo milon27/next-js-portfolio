@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "milon27",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextServer2"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs12"
+  }
+}

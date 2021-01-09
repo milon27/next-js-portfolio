@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="785" height="285" viewBox="0 0 785 285">
+  <defs>
+    <filter id="_27" x="555" y="23" width="216" height="242" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_113" data-name="Group 113" transform="translate(-1121 -1360)">
+    <g id="Group_112" data-name="Group 112" transform="translate(647 1138)">
+      <path id="Path_2" data-name="Path 2" d="M121.5,0A121.5,121.5,0,1,1,0,121.5,121.5,121.5,0,0,1,121.5,0Z" transform="translate(1016 232)" fill="#30d780"/>
+      <g transform="matrix(1, 0, 0, 1, 474, 222)" filter="url(#_27)">
+        <text id="_27-2" data-name="27" transform="translate(663 195)" fill="#fff" font-size="164" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-98.482" y="0">27</tspan></text>
+      </g>
+    </g>
+    <text id="Milon" transform="translate(1121 1571)" fill="#30d780" font-size="209" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Milon</tspan></text>
+  </g>
+</svg>
