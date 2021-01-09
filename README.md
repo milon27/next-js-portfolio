@@ -1,8 +1,13 @@
 
-# Deploy NEXT JS into firebase
+>## Project Screenshot
+
+![scr](https://github.com/milon27/next-js-portfolio/blob/master/screenshot.png)
+
+
+># Deploy NEXT JS into firebase
  </br>
 
-> ## Step to follow
+ ## Step to follow
 1. npx create next-app .
 1. do all the code you want.
 1. create a firebase project
