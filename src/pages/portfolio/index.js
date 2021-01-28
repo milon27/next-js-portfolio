@@ -41,7 +41,7 @@ export const getStaticProps = async (context) => {
             props: {
                 portfolios: data//arry
                 , isFound: true
-            }, revalidate: 43200//12 hours(86400/2)=43200
+            }, revalidate: 5000//(5 second)//12 hours(86400/2)=43200
         }
     } catch (e) {
         console.log(e);

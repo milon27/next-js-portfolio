@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "firebase deploy --only functions,hosting"
+    "deploy": "next build && firebase deploy --only hosting,functions:nextServer2"
   },
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^14.1.2",

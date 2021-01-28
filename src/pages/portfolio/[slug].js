@@ -17,7 +17,7 @@ export default function PortDetails({ port, isFound }) {//
 
     return (
         <div>
-            {console.log(port.fields)}
+            {/* console.log(port.fields) */}
             <Header title={port.fields.title} />
             <div className="page_head">
                 <h1>{port.fields.title}</h1>
@@ -45,7 +45,7 @@ export async function getStaticProps(context) {
 
         return {
             props: { port: res, isFound: true },
-            revalidate: 86400//24 hours
+            revalidate: 5000//24 hours
         }
     } catch (e) {
         console.warn(e.message);
