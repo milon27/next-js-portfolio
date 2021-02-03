@@ -30,7 +30,6 @@ export default function index({ portfolios, isFound }) {
 }
 
 export const getStaticProps = async (context) => {
-
     try {
         const res = await CF.getEntries({
             content_type: "portfolio"
@@ -38,10 +37,8 @@ export const getStaticProps = async (context) => {
         const data = res.items
 
         return {
-            props: {
-                portfolios: data//arry
-                , isFound: true
-            }, revalidate: 5000//(5 second)//12 hours(86400/2)=43200
+            props: { portfolios: data, isFound: true },
+            revalidate: 5000//(5 second)//12 hours(86400/2)=43200
         }
     } catch (e) {
         console.log(e);
