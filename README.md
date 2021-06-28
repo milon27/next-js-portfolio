@@ -1,7 +1,7 @@
 
 >## Project Screenshot
 
-![scr](https://github.com/milon27/next-js-portfolio/blob/master/screenshot.png)
+![scr](screenshot.png)
 
 
 ># Deploy NEXT JS into firebase
