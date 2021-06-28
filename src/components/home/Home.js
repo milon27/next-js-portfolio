@@ -1,12 +1,16 @@
 import About from "./About";
 import Hero from "./Hero";
 import Body from './../Body';
+import Skill from './../../pages/Skill';
 export default function Home() {
     return (
         <div>
             <Hero />
-            <Body>
+            <Body className="about">
                 <About />
+            </Body>
+            <Body className="skills">
+                <Skill />
             </Body>
         </div>
     )

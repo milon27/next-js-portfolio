@@ -16,13 +16,13 @@ export default function PortDetails({ port, isFound }) {//
     }
 
     return (
-        <div>
+        <div style={{ background: "#232340" }}>
             {/* console.log(port.fields) */}
             <Header title={port.fields.title} />
-            <div className="page_head">
+            <div className="page_head" >
                 <h1>{port.fields.title}</h1>
             </div>
-            <Body >
+            <Body className="color-white">
                 <SinglePort portfolio={port} />
             </Body>
             <Footer />
@@ -45,7 +45,7 @@ export async function getStaticProps(context) {
 
         return {
             props: { port: res, isFound: true },
-            revalidate: 5000//24 hours
+            revalidate: 5//in second
         }
     } catch (e) {
         console.warn(e.message);

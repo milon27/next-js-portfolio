@@ -45,9 +45,6 @@ export default function Header({ title }) {
                     <Link href="/">
                         <a className="mx-1">Home</a>
                     </Link>
-                    <Link href="/about" >
-                        <a className="mx-1">About</a>
-                    </Link>
                     <Link href="/portfolio">
                         <a className="mx-1">Portfolio</a>
                     </Link>

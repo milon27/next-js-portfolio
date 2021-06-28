@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer style={{ padding: '20px' }}>
+        <footer style={{ padding: '20px', borderTop: '1px solid #33334E' }}>
             <div className="flex justify-content-space align-items-center  py-3">
                 &copy; milon27.web.app
             </div>

@@ -1,4 +1,3 @@
-
 html,
 body {
   padding: 0;
@@ -46,6 +45,10 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.my-5{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .m-auto{
   margin:0 auto;
 }
@@ -60,6 +63,15 @@ a {
 .img-w100p{
   width: 100%;
 }
+.img-circle{
+  width:80px;
+  height:80px;
+  border-radius: 40px;
+  /* background:rgb(226, 226, 226); */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  padding:5px;
+  margin: 5px;
+}
 .img-half{
   width: 30vw;
 }
@@ -68,12 +80,16 @@ a {
 .flex{
   display: flex;
 }
+.flex-dc{
+  flex-direction: column;
+}
 .flex-wrap{
   flex-wrap: wrap;
 }
 .flex-1{
   flex: 1;
 }
+
 .justify-content-space{
   justify-content: space-around;
 }
@@ -87,17 +103,38 @@ a {
   text-align: center;
 }
 
+btn a{
+  color: #30D780;
+  font-weight: bold;
+}
 
 /* page header */
 .page_head{
   color: #30D780;
-  background-color: #ffffff;
+  background-color: #232340;
   text-align: center;
 }
 
+.color-white{
+  color: #fff;
+}
 
-/* blog excerpt */
+.socials{
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+.socials .icons i{
+font-size: 20px;
+padding: 8px;
+color:#232340;
+background: #00FFAA;
+border-radius:8px;
+margin: 0px 8px;
+}
+
 @media (min-width:768px){
+
   /* .blog_excerpt{
   display: flex;
   flex-wrap: wrap;
@@ -129,8 +166,12 @@ a {
 
 /* nav menu */
 
-header,footer{
+header{
   background: #30d7801f;
+}
+footer{
+  background: #232340;
+  color: #fff;
 }
 
  .openMenu i{
@@ -139,11 +180,11 @@ header,footer{
 
   .nav-links a{
     position: relative;
-    color: #30D780;
+    color:#F4B245;
     font-weight: bold;
   }
   .nav-links a::after{
-    background-color: #30D780;
+    background-color: #F4B245;
     content: '';
     height: 2px;
     width: 0%;
@@ -163,23 +204,44 @@ header,footer{
   .btn{
     background-color: #30D780;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 600;
   }
 .port .item{
   border-radius: 5px;
-  border:1px solid rgb(46, 46, 46);
+  border:1px solid rgb(197, 197, 197);
   margin: 5px;
   padding: 5px;
   display: flex;
+  width:100%;
+  align-items: center;
 }
 /* home page */
 
+.about{
+  background-color:#232340;
+  padding: 50px 20px;
+}
+.skills{
+  /* background: url('/skill-bg.svg'); */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-color:#33334E;
+  padding: 50px 20px;
+}
 
 /* desktop */
 @media (min-width:700px){
   
+  .onlyDesk{
+    display:block;
+  }
+  .onlyMobile{
+    display:none;
+  }
+
   /* home page hero */
 .hero-text{
   color:#30D780;
@@ -190,17 +252,20 @@ header,footer{
   margin-bottom:0px ;
 }
 .hero-text h4{
-  color: black;
+  color: #ffffff;
   margin-top:10px ;
   font-size: 25px;
 }
 .hero-bg{
-  background-image: url('/hero-bg.svg');
+  background-image: url('/hero-1.svg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
-  height: 85vh;
-}
+  height: 100vh;
+  background-color: #33334E;
+}               
+
+  
 
 .flex-half{
   flex:1;
@@ -212,6 +277,7 @@ header{
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 999;
 }
 .page_head{
   padding-top: 100px;
@@ -222,6 +288,12 @@ header{
 
 /* mobile */
 @media (max-width:700px){
+  .onlyDesk{
+    display:none;
+  }
+  .onlyMobile{
+    display:block;
+  }
   .nav-links{
     position: absolute;
     left: -250px;
@@ -264,9 +336,9 @@ header{
   }
 
   /* home hero */
-  .hero-text h1{
-    margin-bottom: 5px;
-  }
+.hero-text h1{
+  margin-bottom: 5px;
+}
 .hero-text{
   color:#ffffff;
   padding: 20px;
@@ -275,21 +347,19 @@ header{
   padding: 40px 10px;
   width: 100%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.329);
 }
 
 header{
-background-color: #30d7814f;
+background-color: #232340;
 }
 .hero-bg{
-  background-image: url('/hero-bg.svg');
-  background-color: #30d7813a;
+  /* background-image: url('/hero-bg.svg'); */
+  background-color: #33334E;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
-
-  /* home hero end */
+/* home hero end */
 
 }
 

@@ -7,23 +7,23 @@ import CF from './../../utils/contentful/CF';
 export default function index({ portfolios, isFound }) {
 
     return (
-        <div>
+        <div style={{ background: "#232340" }}>
             <Header title="All Blog" />
             <div className="page_head">
                 <h1>All Portfolio</h1>
             </div>
-            <Body >
+            <div className="m-auto px-auto color-white" style={{ minHeight: "70vh", maxWidth: '1000px' }}>
                 <div className="my-2 port_container">
                     {
                         isFound ? portfolios.map(portfolio => {
 
                             return (
                                 <PortExcerpt key={portfolio.sys.id} portfolio={portfolio} />)
-                        }) : <h2 className="py-3 text-center">No Post Found</h2>
+                        }) : <h2 className="py-3 text-center">No Portfolio Found</h2>
 
                     }
                 </div>
-            </Body>
+            </div>
             <Footer />
         </div>
     )
@@ -38,7 +38,7 @@ export const getStaticProps = async (context) => {
 
         return {
             props: { portfolios: data, isFound: true },
-            revalidate: 5000//(5 second)//12 hours(86400/2)=43200
+            revalidate: 5//in second
         }
     } catch (e) {
         console.log(e);
