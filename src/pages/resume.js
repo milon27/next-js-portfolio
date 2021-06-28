@@ -27,7 +27,7 @@ export default function Resume() {
             </div>
             <Body>
                 {/* <iframe src="/resume.pdf" className="img-w100p" style={{ height: "100vh" }}></iframe> */}
-                <div style={{ width: "100%", marginTop: "50px" }}>
+                <div style={{ width: "100%", marginTop: "50px" }} className="color-white">
                     <img src="/resume.svg" className="onlyMobile img-w100p" style={{ background: "#fff" }} />
                     <Document
                         className="onlyDesk"

@@ -29,13 +29,10 @@ export default function Skill() {
                     <h1>Let's Connect</h1>
                     <div className="icons">
 
-                        <a href="https://www.facebook.com/im.milon27"> <i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.facebook.com/im.milon27"> <i className="fa fa-facebook-square"></i></a>
                         <a href="mailto:mdjahidulislammilon@gmail.com"><i className="fa fa-envelope"></i></a>
                         <a href="https://github.com/milon27"> <i className="fa fa-github"></i></a>
                         <a href="https://www.youtube.com/channel/UCKxdKrpirqyhstnnPNsABZA"> <i className="fa fa-youtube"></i></a>
-
-
-
 
                     </div>
                 </div>

@@ -22,7 +22,7 @@ export default function PortDetails({ port, isFound }) {//
             <div className="page_head" >
                 <h1>{port.fields.title}</h1>
             </div>
-            <Body className="color-white">
+            <Body className="color-white px-auto">
                 <SinglePort portfolio={port} />
             </Body>
             <Footer />

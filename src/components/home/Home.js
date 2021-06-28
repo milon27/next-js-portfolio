@@ -1,7 +1,7 @@
 import About from "./About";
 import Hero from "./Hero";
 import Body from './../Body';
-import Skill from './../../pages/Skill';
+import Skill from './Skill';
 export default function Home() {
     return (
         <div>

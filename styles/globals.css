@@ -71,6 +71,7 @@ a {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
   padding:5px;
   margin: 5px;
+  background: #42425b;
 }
 .img-half{
   width: 30vw;
@@ -132,6 +133,7 @@ background: #00FFAA;
 border-radius:8px;
 margin: 0px 8px;
 }
+
 
 @media (min-width:768px){
 
@@ -300,9 +302,9 @@ header{
     top: 0;
     height: 100%;
     min-width: 250px;
-    padding: 10px;
-    background-color: #30D780;
-    transition: 1s;
+    padding: 50px;
+    background-color: #33334E;
+    transition: 0.5s;
   }
   .nav-links a{
     display:block;
@@ -347,13 +349,14 @@ header{
   padding: 40px 10px;
   width: 100%;
   border-radius: 10px;
+  background:#23234091;
 }
 
 header{
-background-color: #232340;
+  background-color: #232340;
 }
 .hero-bg{
-  /* background-image: url('/hero-bg.svg'); */
+  background-image: url('/about.svg');
   background-color: #33334E;
   background-repeat: no-repeat;
   background-position: center center;
