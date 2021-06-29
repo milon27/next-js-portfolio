@@ -96,6 +96,7 @@ a {
 .justify-content-center{
   justify-content: center;
 }
+
 .justify-content-space{
   justify-content: space-around;
 }
@@ -142,14 +143,6 @@ margin: 0px 8px;
 
 @media (min-width:768px){
 
-  /* .blog_excerpt{
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid #dfdfdf;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  } */
   .port_container{
     gap:2rem;
     column-width: 30vw;
@@ -304,6 +297,11 @@ header{
 
 /* mobile */
 @media (max-width:700px){
+
+  .justify-content-center-m{
+    justify-content: center;
+  }
+
   .mepic{
     width:70%;
   }

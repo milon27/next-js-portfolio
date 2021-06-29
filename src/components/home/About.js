@@ -2,7 +2,7 @@ export default function About() {
     return (
         <>
             <div className="flex flex-wrap my-3" style={{ position: 'relative' }}>
-                <div className="flex justify-content-center flex-half">
+                <div className="flex justify-content-center-m flex-half">
                     <img className="mepic" src="/about.png" />
                 </div>
                 <div className="flex-half color-white" style={{
