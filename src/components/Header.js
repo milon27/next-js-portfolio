@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function Header({ title }) {
+export default function Header({ title, color = "light" }) {
 
     const openMenu = (e) => {
         const menu = document.getElementById('mob-menu')
@@ -20,19 +20,21 @@ export default function Header({ title }) {
 
     }
 
-
     return (
         <>
             <Head>
                 <title>{title}</title>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
                 <link rel="icon" href="/fav.svg" />
             </Head>
             {/* header */}
             <header className="flex justify-content-space align-items-center py-2">
                 <Link href="/">
                     <a>
-                        <img className="img-w150" src="/milon27.svg" />
+                        <img className="img-w150" src="/logo.svg" />
                     </a>
                 </Link>
 
@@ -41,7 +43,7 @@ export default function Header({ title }) {
                     <i className="fa fa-bars"></i>
                 </div>
 
-                <nav id="mob-menu" className="nav-links">
+                <nav id="mob-menu" className={color === "light" ? "nav-links" : "nav-links-dark"} >
                     <Link href="/">
                         <a className="mx-1">Home</a>
                     </Link>

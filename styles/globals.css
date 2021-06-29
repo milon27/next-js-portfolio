@@ -2,8 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:nunito, sans-serif;
-  
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family: poppins, sans-serif;
 }
 
 a {
@@ -70,7 +73,7 @@ a {
   /* background:rgb(226, 226, 226); */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
   padding:5px;
-  margin: 5px;
+  margin: 0px 10px;
   background: #42425b;
 }
 .img-half{
@@ -90,7 +93,9 @@ a {
 .flex-1{
   flex: 1;
 }
-
+.justify-content-center{
+  justify-content: center;
+}
 .justify-content-space{
   justify-content: space-around;
 }
@@ -157,7 +162,7 @@ margin: 0px 8px;
     margin-bottom: 30px;
     border: 1px solid #dfdfdf;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 }
 
@@ -185,7 +190,14 @@ footer{
     color:#F4B245;
     font-weight: bold;
   }
-  .nav-links a::after{
+
+  .nav-links-dark a{
+    position: relative;
+    color:#232340;
+    font-weight: bold;
+  }
+
+  .nav-links a::after,.nav-links-dark a::after{
     background-color: #F4B245;
     content: '';
     height: 2px;
@@ -198,7 +210,7 @@ footer{
     transition:0.6s;
   }
 
-  .nav-links a:hover::after{
+  .nav-links a:hover::after,.nav-links-dark a:hover::after{
     width: 100%;
     transition: 0.6s;
   }
@@ -213,11 +225,12 @@ footer{
 .port .item{
   border-radius: 5px;
   border:1px solid rgb(197, 197, 197);
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
   display: flex;
   width:100%;
   align-items: center;
+  min-width: 190px;
 }
 /* home page */
 
@@ -226,7 +239,6 @@ footer{
   padding: 50px 20px;
 }
 .skills{
-  /* background: url('/skill-bg.svg'); */
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -236,7 +248,9 @@ footer{
 
 /* desktop */
 @media (min-width:700px){
-  
+  .mepic{
+    width:65%;
+  }
   .onlyDesk{
     display:block;
   }
@@ -247,7 +261,7 @@ footer{
   /* home page hero */
 .hero-text{
   color:#30D780;
-  padding: 250px;
+  padding: 200px 150px;
 }
 .hero-text h1{
   font-size: 45px;
@@ -276,7 +290,7 @@ footer{
   /* home page hero end  */
 
 header{
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -290,13 +304,16 @@ header{
 
 /* mobile */
 @media (max-width:700px){
+  .mepic{
+    width:70%;
+  }
   .onlyDesk{
     display:none;
   }
   .onlyMobile{
     display:block;
   }
-  .nav-links{
+  .nav-links,.nav-links-dark{
     position: absolute;
     left: -250px;
     top: 0;
@@ -306,7 +323,7 @@ header{
     background-color: #33334E;
     transition: 0.5s;
   }
-  .nav-links a{
+  .nav-links a,.nav-links-dark a{
     display:block;
     color: #ffffff;
     padding: 5px 0px;
@@ -318,7 +335,7 @@ header{
     font-size: 30px;
   }
 
-  .nav-links a::after{
+  .nav-links a::after,.nav-links-dark a::after{
     background-color: #ffffff;
   }
   .img-w150 {
@@ -339,24 +356,22 @@ header{
 
   /* home hero */
 .hero-text h1{
+  color:#30D780;
   margin-bottom: 5px;
 }
 .hero-text{
   color:#ffffff;
-  padding: 20px;
   text-align: center;
-  margin:40px 20px;
-  padding: 40px 10px;
+  margin:20px 20px;
+  padding: 20px 10px;
   width: 100%;
   border-radius: 10px;
-  background:#23234091;
 }
 
 header{
   background-color: #232340;
 }
 .hero-bg{
-  background-image: url('/about.svg');
   background-color: #33334E;
   background-repeat: no-repeat;
   background-position: center center;

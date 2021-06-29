@@ -9,22 +9,38 @@ export default function Skill() {
                 </div>
                 <div className="flex flex-wrap">
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/android.svg" />
+                        <img className="img-w100p img-circle" src="/app.png" />
                         <h3>Native Android App</h3>
                     </div>
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/react.svg" />
+                        <img className="img-w100p img-circle" src="/target.png" />
                         <h3>React Js Web App</h3>
                     </div>
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/next.svg" />
+                        <img className="img-w100p img-circle" src="/sound.png" />
                         <h3>Next Js Web App</h3>
                     </div>
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/wp.svg" />
+                        <img className="img-w100p img-circle" src="/fire.png" />
                         <h3>Wordpress Site</h3>
                     </div>
+
+                    <div className="flex-half item">
+                        <img className="img-w100p img-circle" src="/phn2.png" />
+                        <h3>React Native App</h3>
+                    </div>
+                    <div className="flex-half item">
+                        <img className="img-w100p img-circle" src="/cloud.svg" />
+                        <h3>AWS(EC2),Digital Ocean</h3>
+                    </div>
+                    <div className="flex-half item">
+                        <img className="img-w100p img-circle" src="/api.png" />
+                        <h3>API Development</h3>
+                    </div>
                 </div>
+
+
+
                 <div className="my-5 flex socials">
                     <h1>Let's Connect</h1>
                     <div className="icons">
