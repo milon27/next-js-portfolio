@@ -212,7 +212,7 @@ footer{
 
   .btn{
     background-color: #30D780;
-    color: #ffffff;
+    color: #33334e;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 600;
@@ -256,7 +256,7 @@ footer{
   /* home page hero */
 .hero-text{
   color:#30D780;
-  padding: 200px 150px;
+  padding: 200px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +276,6 @@ footer{
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  height: 100vh;
   background-color: #33334E;
 }               
 
