@@ -18,9 +18,9 @@ export default function PortDetails({ port, isFound }) {//
     return (
         <div style={{ background: "#232340" }}>
             {/* console.log(port.fields) */}
-            <Header title={port.fields.title} />
+            <Header title={port.fields?.title} />
             <div className="page_head" >
-                <h1>{port.fields.title}</h1>
+                <h1>{port.fields?.title}</h1>
             </div>
             <Body className="color-white px-auto">
                 <SinglePort portfolio={port} />

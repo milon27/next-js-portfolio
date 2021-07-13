@@ -10,28 +10,29 @@ export default function Skill() {
                 <div className="flex flex-wrap">
                     <div className="flex-half item">
                         <img className="img-w100p img-circle" src="/app.png" />
-                        <h3>Native Android App</h3>
+                        <h3>Native Android</h3>
                     </div>
                     <div className="flex-half item">
                         <img className="img-w100p img-circle" src="/target.png" />
-                        <h3>React Js Web App</h3>
+                        <h3>React/Next Js Web App</h3>
                     </div>
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/sound.png" />
-                        <h3>Next Js Web App</h3>
+                        <img className="img-w100p img-circle" src="/phn2.png" />
+                        <h3>React Native App</h3>
                     </div>
                     <div className="flex-half item">
                         <img className="img-w100p img-circle" src="/fire.png" />
                         <h3>Wordpress Site</h3>
                     </div>
 
+
                     <div className="flex-half item">
-                        <img className="img-w100p img-circle" src="/phn2.png" />
-                        <h3>React Native App</h3>
+                        <img className="img-w100p img-circle" src="/sound.png" />
+                        <h3>MySQL, Firebase, MongoDB</h3>
                     </div>
                     <div className="flex-half item">
                         <img className="img-w100p img-circle" src="/cloud.svg" />
-                        <h3>AWS(EC2),Digital Ocean</h3>
+                        <h3>AWS(EC2), Digital Ocean</h3>
                     </div>
                     <div className="flex-half item">
                         <img className="img-w100p img-circle" src="/api.png" />

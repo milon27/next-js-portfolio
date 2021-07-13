@@ -12,9 +12,9 @@
     <g id="Group_112" data-name="Group 112" transform="translate(647 1138)">
       <path id="Path_2" data-name="Path 2" d="M121.5,0A121.5,121.5,0,1,1,0,121.5,121.5,121.5,0,0,1,121.5,0Z" transform="translate(1016 232)" fill="#30d780"/>
       <g transform="matrix(1, 0, 0, 1, 474, 222)" filter="url(#_27)">
-        <text id="_27-2" data-name="27" transform="translate(663 195)" fill="#fff" font-size="164" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-98.482" y="0">27</tspan></text>
+        <text id="_27-2" data-name="27" transform="translate(663 195)" fill="#fff" font-size="164" font-family="sans-serif" font-weight="700"><tspan x="-98.482" y="0">27</tspan></text>
       </g>
     </g>
-    <text id="Milon" transform="translate(1121 1571)" fill="#30d780" font-size="209" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Milon</tspan></text>
+    <text id="Milon" transform="translate(1121 1571)" fill="#30d780" font-size="209" font-family="sans-serif" font-weight="700"><tspan x="0" y="0">Milon</tspan></text>
   </g>
 </svg>

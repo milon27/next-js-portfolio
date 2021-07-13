@@ -6,7 +6,7 @@ body {
 }
 
 h1,h2,h3,h4{
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -70,12 +70,14 @@ a {
   width:80px;
   height:80px;
   border-radius: 40px;
-  /* background:rgb(226, 226, 226); */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-  padding:5px;
-  margin: 0px 10px;
   background: #42425b;
+  padding:5px!important;
 }
+.port .item h3{
+  margin: 0px 10px!important;
+}
+
 .img-half{
   width: 30vw;
 }
@@ -255,6 +257,10 @@ footer{
 .hero-text{
   color:#30D780;
   padding: 200px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 }
 .hero-text h1{
   font-size: 45px;
@@ -266,7 +272,7 @@ footer{
   font-size: 25px;
 }
 .hero-bg{
-  background-image: url('/hero-1.svg');
+  background-image: url('/hero-1.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
