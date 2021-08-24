@@ -7,7 +7,7 @@ import CF from './../../utils/contentful/CF';
 export default function index({ portfolios, isFound }) {
 
     return (
-        <div style={{ background: "#232340" }}>
+        <div className="page">
             <Header title="All Blog" />
             <div className="page_head">
                 <h1>All Portfolio</h1>

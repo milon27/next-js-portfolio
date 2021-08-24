@@ -15,6 +15,9 @@ export default function Hero() {
                     </Link>
 
                 </div>
+                <div className="hero-img">
+                    <img src="/hero-img.png" alt="" className="img-w100p" />
+                </div>
             </div>
         </div >
     )

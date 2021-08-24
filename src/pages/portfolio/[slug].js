@@ -16,7 +16,7 @@ export default function PortDetails({ port, isFound }) {//
     }
 
     return (
-        <div style={{ background: "#232340" }}>
+        <div className="page">
             {/* console.log(port.fields) */}
             <Header title={port.fields?.title} />
             <div className="page_head" >
@@ -32,7 +32,7 @@ export default function PortDetails({ port, isFound }) {//
 
 export async function getStaticPaths() {
     return {
-        paths: [{ params: { slug: '1' } }],
+        paths: [{ params: { slug: '3JlPP6F18sfzPz3nuUs6F7' } }],
         fallback: true
     }
 }

@@ -4,7 +4,7 @@ import Body from './../components/Body';
 
 export default function Contact() {
     return (
-        <div style={{ background: "#232340" }}>
+        <div className="page">
             <Header title="contact" />
             <div className="page_head">
                 <h1>Contact Me On</h1>

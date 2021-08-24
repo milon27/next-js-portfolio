@@ -15,11 +15,10 @@ export default function Resume() {
         } else {
             setscale(0.28)
         }
-
     }, [])
 
     return (
-        <div style={{ background: "#232340" }}>
+        <div className="page">
             <Header title="Resume" />
             <div className="page_head" >
                 <h1>Resume</h1>

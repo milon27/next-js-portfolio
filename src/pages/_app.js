@@ -1,4 +1,6 @@
 import '../../styles/globals.css'
+import '../../styles/desktop.css'
+import '../../styles/mobile.css'
 
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
