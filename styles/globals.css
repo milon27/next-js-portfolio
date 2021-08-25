@@ -7,7 +7,7 @@ body{
 }
 body.light-theme{
   --background:#fff;
-  --background-seconday:#f7f7f7;
+  --background-seconday:#EFEFEF;
   --primary:#00FFAA;
   --text-white:#232340;
   --text-black:#fff;
@@ -85,12 +85,13 @@ a {
   width: 100%;
 }
 .img-circle{
-  width:80px;
-  height:80px;
+  width:75px;
+  height:75px;
   border-radius: 40px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
   background: #42425b;
   padding:5px!important;
+  margin:5px;
 }
 .port .item h3{
   margin: 0px 10px!important;
@@ -229,7 +230,8 @@ footer{
 }
 .port .item{
   border-radius: 5px;
-  border:1px solid rgb(197, 197, 197);
+  border:1px solid var(--background);
+  background: var(--background);
   margin: 10px;
   padding: 5px;
   display: flex;

@@ -5,7 +5,7 @@ import Switcher from './switcher/Switcher';
 
 export default function Header({ title, color = "light" }) {
 
-    const [lightmode, setLightMode] = useState(false)
+    const [lightmode, setLightMode] = useState(true)
 
     const openMenu = (e) => {
         const menu = document.getElementById('mob-menu')
