@@ -1,6 +1,11 @@
 
 /* mobile */
 @media (max-width:700px){
+.annotationLayer {
+	display: none!important;
+}
+
+  /* pdf */
 
   .justify-content-center-m{
     justify-content: center;

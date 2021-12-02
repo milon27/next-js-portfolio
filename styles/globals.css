@@ -254,10 +254,3 @@ footer{
   background-color:var(--background-seconday);
   padding: 50px 20px;
 }
-
-/* pdf */
-
-.react-pdf__Page__canvas {
-  width: 100% !important;
-  height: 100% !important;
-}
