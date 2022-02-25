@@ -126,14 +126,20 @@ So final package.json file will look like this.we added some custom scipt.
 > ## Start Deploy
 
 ```
+//reset local changes
+1. git reset --hard HEAD
+
+//pull changes
+2. git pull
+
 //install dependency
-1. npm ci
+3. npm ci
 
 //build our Next.js project to generate .next folder
-2. npm run build
+4. npm run build
 
 //Start using pm2
-3. pm2 start npm --name "app" -- start
+5. pm2 start npm --name "app" -- start
 
 ```
 
