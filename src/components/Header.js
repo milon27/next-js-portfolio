@@ -1,11 +1,17 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Switcher from './switcher/Switcher';
+import { motion } from 'framer-motion'
+import { FadeInDown } from '../utils/anim/Anim';
+
 
 export default function Header({ title }) {
 
-    const [lightmode, setLightMode] = useState(true)
+    const [theme, setTheme] = useState(() => {
+        const theme = (typeof window !== "undefined") ? localStorage.getItem("theme") : 'dark';//light=false,dark=true
+        return theme === 'light' ? false : true
+    })
 
     const openMenu = (e) => {
         const menu = document.getElementById('mob-menu')
@@ -22,6 +28,15 @@ export default function Header({ title }) {
             }
         }
     }
+
+
+    useEffect(() => {
+        if (theme === false) {
+            document.body.classList.add("light-theme");
+        } else {
+            document.body.classList.remove("light-theme");
+        }
+    }, [theme])
 
     return (
         <>
@@ -41,7 +56,11 @@ export default function Header({ title }) {
                 <Link href="/">
                     <a>
                         {/* <img className="img-w150" src="/logo.svg" /> */}
-                        <h1 className='text-primary'>Milon27</h1>
+                        <motion.h1
+                            initial="init"
+                            animate="anim"
+                            variants={FadeInDown()}
+                            className='text-primary'>Milon27</motion.h1>
                     </a>
                 </Link>
 
@@ -50,7 +69,12 @@ export default function Header({ title }) {
                     <i className="fa fa-bars"></i>
                 </div>
 
-                <nav id="mob-menu" className="nav-links-dark" >
+                <motion.nav
+                    initial="init"
+                    animate="anim"
+                    variants={FadeInDown()}
+
+                    id="mob-menu" className="nav-links-dark" >
                     <Link href="/">
                         <a className="mx-1">Home</a>
                     </Link>
@@ -63,41 +87,20 @@ export default function Header({ title }) {
                     <Link href="/resume">
                         <a className="mx-1">Resume</a>
                     </Link>
-                    <Switcher state={lightmode} onChange={() => {
-                        setLightMode(old => {
+
+                    <Switcher state={theme} onChange={() => {
+                        setTheme(old => {
                             let theme = !old
-                            // if (theme) {
-                            //     document.body.classList.toggle("light-theme");
-                            // } else {
-                            //     document.body.classList.toggle("dark-theme");
-                            // }
+                            ///light=false,dark=true
+                            if (typeof window !== "undefined") {
+                                localStorage.setItem('theme', theme === true ? 'dark' : "light")
+                            }
                             return theme
                         })
 
                         document.body.classList.toggle("light-theme");
-
-                        // const currentTheme = localStorage.getItem("theme");
-                        // if (currentTheme == "dark") {
-                        //     document.body.classList.toggle("dark-theme");
-                        // } else if (currentTheme == "light") {
-                        //     document.body.classList.toggle("light-theme");
-                        // }
-                        // if (prefersDarkScheme.matches) {
-                        //     document.body.classList.toggle("light-theme");
-                        //     var theme = document.body.classList.contains("light-theme")
-                        //         ? "light"
-                        //         : "dark";
-                        // } else {
-                        //     document.body.classList.toggle("dark-theme");
-                        //     var theme = document.body.classList.contains("dark-theme")
-                        //         ? "dark"
-                        //         : "light";
-                        // }
-                        // localStorage.setItem("theme", theme);
-
-
                     }} />
-                </nav>
+                </motion.nav>
             </header>
         </>
     )

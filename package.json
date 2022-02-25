@@ -13,11 +13,12 @@
     "contentful": "8.1.7",
     "firebase-admin": "9.4.2",
     "firebase-functions": "3.13.0",
-    "framer-motion": "^6.2.8",
+    "framer-motion": "4.1.17",
     "next": "10.0.5",
     "nprogress": "0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-intersection-observer": "^8.33.1",
     "react-pdf": "5.3.0"
   }
 }

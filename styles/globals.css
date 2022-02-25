@@ -98,9 +98,7 @@ a {
   padding:5px!important;
   margin:5px;
 }
-.port .item h4{
-  margin: 0px 10px!important;
-}
+
 
 .img-half{
   width: 30vw;
@@ -240,6 +238,7 @@ footer{
 }
 
 .port .item{
+  gap:10px;
   border-radius: 5px;
   border:1px solid var(--background);
   background: var(--background);
