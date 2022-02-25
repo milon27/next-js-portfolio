@@ -1,9 +1,9 @@
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import Link from 'next/link'
 
-export default function About() {
+export default function About({ about }) {
     const { scrollYProgress } = useViewportScroll();
     const rotate = useTransform(scrollYProgress, [0, 1], [100, -100])
-
 
     return (
         <>
@@ -21,7 +21,10 @@ export default function About() {
                     alignSelf: "center"
                 }}>
                     <h1>About Me</h1>
-                    <p style={{ lineHeight: "25px", textAlign: "left", opacity: 0.8 }}>I have completed my Bachelor of Science in the Department of Computer Science and Engineering at IUBAT. I have more than 2 years of Mobile and Web Development experience on the marketplaces Fiverr and Upwork (completed 200+ projects). Currently, I am working with Node JS, Android, React native, React JS, Next JS, MySQL, Firebase,MongoDb, Rest API, GraphQl, WordPress and Woo-commerce.</p>
+                    <p style={{ lineHeight: "25px", textAlign: "left", opacity: 0.8 }}>{about}</p>
+                    <Link href="/portfolio" >
+                        <a><b><u>View My Work</u></b></a>
+                    </Link>
                 </div>
                 {/* <img src="dark-circle.svg" style={{ position: "absolute", right: 0, bottom: "-50%", width: "40%" }} alt="" />
                 <img src="dark-circle-light.png" style={{ position: "absolute", right: 0, bottom: "-50%", width: "40%" }} alt="" /> */}

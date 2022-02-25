@@ -67,28 +67,16 @@ export default function Skill() {
                     </motion.div>
                     <motion.div className="flex-half item" variants={item}>
                         <img className="img-w100p img-circle" src="/cloud.svg" />
-                        <h4>AWS(EC2), Digital Ocean</h4>
+                        <h4>AWS(EC2), Digital Ocean, Oracle Cloud</h4>
                     </motion.div>
                     <motion.div className="flex-half item" variants={item}>
                         <img className="img-w100p img-circle" src="/api.png" />
-                        <h4>API Development</h4>
+                        <h4>REST/ Graph QL API Development(NODE JS)</h4>
                     </motion.div>
+
+
                 </motion.div>
-
-
-
-                <div className="my-5 flex socials" style={{ marginTop: "50px" }}>
-                    <h1>Let's Connect</h1>
-                    <div className="icons">
-
-                        <a href="https://www.facebook.com/im.milon27"> <i className="fa fa-facebook-square"></i></a>
-                        <a href="mailto:mdjahidulislammilon@gmail.com"><i className="fa fa-envelope"></i></a>
-                        <a href="https://github.com/milon27"> <i className="fa fa-github"></i></a>
-                        <a href="https://www.youtube.com/channel/UCKxdKrpirqyhstnnPNsABZA"> <i className="fa fa-youtube"></i></a>
-
-                    </div>
-                </div>
-
+                {/*  */}
             </div>
         </>
     )

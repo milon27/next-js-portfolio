@@ -5,11 +5,13 @@ import CF from './../../utils/contentful/CF';
 
 export default function index({ portfolios, isFound }) {
 
+
+
     return (
         <div className="page">
             <Header title="All Blog" />
             <div className="page_head">
-                <h1>All Portfolio</h1>
+                <h1>Featured  Portfolio</h1>
             </div>
             <div className="m-auto px-auto color-white" style={{ minHeight: "70vh", maxWidth: '1000px' }}>
                 <div className="my-2 port_container">

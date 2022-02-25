@@ -2,16 +2,20 @@ import About from "./About";
 import Hero from "./Hero";
 import Body from './../Body';
 import Skill from './Skill';
-export default function Home() {
+import SocialIcon from "../layout/SocialIcon";
+
+export default function Home({ about }) {
     return (
         <div>
             <Hero />
             <Body className="about">
-                <About />
+                <About about={about} />
             </Body>
             <Body className="skills">
                 <Skill />
+                <SocialIcon />
             </Body>
         </div>
     )
 }
+

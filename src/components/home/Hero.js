@@ -32,9 +32,9 @@ export default function Hero() {
                         y: 0,
                     }}
                     animate={{
-                        y: [20, 0, 20],
+                        y: [30, 0, 30],
                         transition: {
-                            duration: 2,
+                            duration: 2.2,
                             ease: "easeInOut",
                             repeat: Infinity,
                         }

@@ -31,8 +31,12 @@
     border: 1px solid var(--background-seconday);
     background: var(--background-seconday);
     padding: 20px;
-    border-radius: 2px;
+    border-radius: 8px;
   }
+
+    .blog_excerpt img{
+      border-radius: 5px;
+    }
 
   /* home page hero */
 .hero-text{

@@ -7,12 +7,16 @@ import SinglePort from '../../components/portfolio/SinglePort';
 import CF from './../../utils/contentful/CF';
 
 export default function PortDetails({ port, isFound }) {//
-    if (!isFound) {
-        return <ErrorPage statusCode={404} />
-    }
+
     const router = useRouter()
     if (router.isFallback) {
-        return <>loading....</>
+        return <div className="page" style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <h1 className='color-white'>loading....</h1>
+        </div >
+    }
+
+    if (!isFound) {
+        return <ErrorPage statusCode={404} />
     }
 
     return (
