@@ -4,14 +4,12 @@ export default function Hero() {
         <div className="hero-bg">
             <div style={{ margin: "auto", maxWidth: "1000px", height: "100vh" }} className="flex">
                 <div className="hero-text">
-                    <h5 style={{ fontSize: "20px", marginBottom: "5px" }} className="color-white">This is</h5>
-                    <h1 style={{ marginTop: "5px" }}>Md Jahidul <br></br>islam Milon</h1>
-                    <h4 style={{ fontWeight: 500 }}>Build mobile & web app for you</h4>
+                    <h1 className='title'>Build mobile & web application</h1>
+                    <p className="sub-title color-white">____ Md Jahidul islam Milon</p>
 
                     <img src="/dash.png" alt="" className="img-w100p onlyMobile" />
-
                     <Link href="/contact" >
-                        <a className="btn">Contact Me Now </a>
+                        <a className="btn-outline">Contact Me Now </a>
                     </Link>
 
                 </div>

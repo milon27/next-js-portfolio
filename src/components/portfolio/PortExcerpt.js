@@ -8,7 +8,7 @@ export default function PortExcerpt({ portfolio }) {
             <Link href={`/portfolio/${portfolio.sys.id}`}>
                 <a>
                     <h2 className="title">{portfolio.fields.title}</h2>
-                    <img style={{ borderRadius: "5px" }} className="img-w100p" src={portfolio.fields.thumbnail.fields.file.url} />
+                    <img style={{ borderRadius: "2px" }} className="img-w100p" src={portfolio.fields.thumbnail.fields.file.url} />
                 </a>
             </Link>
         </div >

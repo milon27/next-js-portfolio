@@ -1,6 +1,5 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Body from '../../components/Body';
 import PortExcerpt from '../../components/portfolio/PortExcerpt';
 import CF from './../../utils/contentful/CF';
 

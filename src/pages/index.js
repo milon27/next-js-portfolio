@@ -5,7 +5,7 @@ import Home from "../components/home/Home";
 export default function index() {
     return (
         <>
-            <Header title="Home" color="dark" />
+            <Header title="Home" />
             <Home />
             <Footer />
         </>

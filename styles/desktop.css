@@ -31,12 +31,12 @@
     border: 1px solid var(--background-seconday);
     background: var(--background-seconday);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 2px;
   }
 
   /* home page hero */
 .hero-text{
-  color:#30D780;
+  color:var(--text-white);
   padding: 200px 0px;
   display: flex;
   flex: 1;
@@ -44,17 +44,19 @@
   justify-content: center;
   align-items: baseline;
 }
-.hero-text h1{
-  font-size: 45px;
-  margin-bottom:0px ;
+.hero-text .title{
+  font-weight: 700;
+  font-size: 50px;
 }
-.hero-text h4{
+
+.hero-text .sub-title{
   color: var(--text-white);
-  margin-top:10px ;
-  font-size: 25px;
+  margin-top:10px;
+  font-size: 20px;
+
 }
 .hero-bg{
-  background-image: url('/hero-1.png');
+  /* background-image: url('/hero-1.png'); */
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;

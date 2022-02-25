@@ -13,6 +13,7 @@
     "contentful": "8.1.7",
     "firebase-admin": "9.4.2",
     "firebase-functions": "3.13.0",
+    "framer-motion": "^6.2.8",
     "next": "10.0.5",
     "nprogress": "0.2.0",
     "react": "17.0.1",

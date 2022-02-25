@@ -30,7 +30,7 @@ export default function Resume() {
             <Header title="Resume" />
             <div className="page_head" >
                 <h1>Resume</h1>
-                <a style={{ padding: " 10px", border: " 1px solid" }} href="resume.pdf" download="resume.pdf"> Download Here </a>
+                <a href="resume.pdf" download="resume.pdf" className='btn-outline'>Download Here</a>
             </div>
 
             <Body>

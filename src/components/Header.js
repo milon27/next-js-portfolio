@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Switcher from './switcher/Switcher';
 
-export default function Header({ title, color = "light" }) {
+export default function Header({ title }) {
 
     const [lightmode, setLightMode] = useState(true)
 
@@ -33,17 +33,15 @@ export default function Header({ title, color = "light" }) {
 
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
                 <link rel="icon" href="/fav.svg" />
             </Head>
             {/* header */}
-            <header className="flex justify-content-space align-items-center py-2">
+            <header className="flex justify-content-space align-items-center ">
                 <Link href="/">
                     <a>
-                        <img className="img-w150" src="/logo.svg" />
+                        {/* <img className="img-w150" src="/logo.svg" /> */}
+                        <h1 className='text-primary'>Milon27</h1>
                     </a>
                 </Link>
 
@@ -52,7 +50,7 @@ export default function Header({ title, color = "light" }) {
                     <i className="fa fa-bars"></i>
                 </div>
 
-                <nav id="mob-menu" className={color === "light" ? "nav-links" : "nav-links-dark"} >
+                <nav id="mob-menu" className="nav-links-dark" >
                     <Link href="/">
                         <a className="mx-1">Home</a>
                     </Link>

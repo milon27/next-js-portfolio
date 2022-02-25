@@ -20,35 +20,35 @@
   .onlyMobile{
     display:block;
   }
-  .nav-links,.nav-links-dark{
+  .nav-links-dark{
     position: absolute;
     left: -250px;
     top: 0;
     height: 100%;
     min-width: 250px;
-    padding: 50px;
+    padding: 30px;
     background-color: var(--background-seconday);
     transition: 0.5s;
   }
   #m27-switcher{
     margin-left: 10px;
-margin-top: 10px;
+    margin-top: 10px;
   }
 
-  .nav-links a,.nav-links-dark a{
+  .nav-links-dark a{
     display:block;
     color: var(--text-white);
-    padding: 5px 0px;
+    padding: 10px 0px;
   }
   .openMenu i{
-    color: #30D780;
+    color:var(--primary);
     display: block;
     text-align: end;
     font-size: 30px;
   }
 
-  .nav-links a::after,.nav-links-dark a::after{
-    background-color: var(--text-white);
+  .nav-links-dark a::after{
+    content: unset;
   }
   .img-w150 {
 	  width: 100px;
@@ -68,7 +68,6 @@ margin-top: 10px;
 
   /* home hero */
 .hero-text h1{
-  color:#30D780;
   margin-bottom: 5px;
 }
 .hero-text{
