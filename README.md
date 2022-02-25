@@ -126,13 +126,18 @@ So final package.json file will look like this.we added some custom scipt.
 > ## Start Deploy
 
 ```
-//build our Next.js project to generate .next folder
-1. npm run build
+//install dependency
+1. npm ci
 
-//Now deploy 
-2. npm run deploy
+//build our Next.js project to generate .next folder
+2. npm run build
+
+//Start using pm2
+3. pm2 start npm --name "app" -- start
 
 ```
+
+
 
 
 
